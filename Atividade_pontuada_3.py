@@ -14,13 +14,24 @@ class Reserva:
     
 def mostrar_menu ():
     os.system("cls")
-    print("\nMenu de Opções Sweet Fligth:")
-    print("1- Registrar número do avião")
-    print("2- Registrar quantidade de assentos disponiveis no avião")
-    print("3- Reservar passagem aérea")
-    print("4- Realizar consulta por avião")
-    print("5- Realizar consulta por passageiro")
-    print("0- Encerrar programa")
+    print("==============================================")
+    print("                 SWEET FLIGHT ✈️")
+    print("==============================================")
+    
+    print("""
+                   __|__
+             *---o--(_)--o---*
+    """)
+
+    print("1 - Registrar número de avião")
+    print("2 - Registrar quantidade de assentos")
+    print("3 - Reservar passagem aérea")
+    print("4 - Consultar reservas por avião")
+    print("5 - Consultar reservas por passageiro")
+    print("0 - Encerrar sistema")
+    print("==============================================")
+    
+    
 
 def encontrar_aviao(avioes, numero_aviao):
     if numero_aviao in  avioes:
@@ -58,7 +69,7 @@ def main():
                      time.sleep(2)
                      
             case "3": #OPÇÃO 3 FAZER RESERVA
-                if len(reservas) >= 20:
+                if len(reservas) >= 1:
                     print("Limite máximo de reservas atingido.")
                     time.sleep(2)
                     continue
