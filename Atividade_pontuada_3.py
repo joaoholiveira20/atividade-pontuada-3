@@ -58,7 +58,7 @@ def main():
                      time.sleep(2)
                      
             case "3": #OPÇÃO 3 FAZER RESERVA
-                if len(reservas) >= 10:
+                if len(reservas) >= 20:
                     print("Limite máximo de reservas atingido.")
                     time.sleep(2)
                     continue
@@ -109,7 +109,7 @@ def main():
                         if not encontrou:
                             print("Nenhuma reserva encontrada para este passageiro.")
                             time.sleep(2)
-                            
+
             case "0": #OPÇÃO 0 ENCERRAR PROGRAMA
                 print("Encerrando o programa. Obrigado por usar a Sweet Flight!")
                 break
